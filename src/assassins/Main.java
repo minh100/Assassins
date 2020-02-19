@@ -10,6 +10,7 @@ public class Main {
 			System.out.println ( "test branches");
 			System.out.println ("testing merge");
 			System.out.println("Does this work in intellj?");
+			System.out.println("HELP");
 	}
 	// Testing
 	// testing plz
