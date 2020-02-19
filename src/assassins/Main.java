@@ -11,6 +11,7 @@ public class Main {
 			System.out.println ("testing merge");
 			System.out.println("Does this work in intellj?");
 			System.out.println("HELP");
+			System.out.println("DO you see this?");
 	}
 	// Testing
 	// testing plz
