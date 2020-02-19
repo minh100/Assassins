@@ -9,5 +9,6 @@ public class Main {
 			j *= j;
 	}
 	// Testing
+	// testing plz
 	
 }
