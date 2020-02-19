@@ -11,11 +11,7 @@ public class Main {
 			System.out.println ("testing merge");
 	}
 	// Testing
-<<<<<<< HEAD
 	// testing plz
 	// intellij 2
-	
-=======
-	// testing plz	
->>>>>>> 7948f5ac70cdead2042bb383dcb5395178aa4ee5
+
 }
