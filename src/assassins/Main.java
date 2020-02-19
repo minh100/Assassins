@@ -7,6 +7,7 @@ public class Main {
 			System.out.println("Sup");
 			int j = 2;
 			j *= j;
+			System.out.println ( "test branches");
 	}
 	// Testing
 	// testing plz
