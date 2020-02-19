@@ -8,8 +8,8 @@ public class Main {
 			int j = 2;
 			j *= j;
 			System.out.println ( "test branches");
+			System.out.println ("testing merge");
 	}
 	// Testing
-	// testing plz
-	
+	// testing plz	
 }
