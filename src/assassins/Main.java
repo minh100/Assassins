@@ -9,6 +9,7 @@ public class Main {
 			j *= j;
 			System.out.println ( "test branches");
 			System.out.println ("testing merge");
+			System.out.println("Does this work in intellj?");
 	}
 	// Testing
 	// testing plz
