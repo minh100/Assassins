@@ -20,7 +20,7 @@ public class Main {
 
 		for (int i = 0; i < people; i++) {
 			System.out.println("What is the name of the next player?");
-			names.add(scan.next());
+			names.add(scan.nextLine());
 		}
 
 		LinkedList<String> loop = new LinkedList<String>();
