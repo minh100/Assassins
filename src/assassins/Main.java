@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
-
 	public static void main(String[] args) {
 		System.out.println("Yes I see this");
 		Scanner scan = new Scanner(System.in);
@@ -37,8 +36,6 @@ public class Main {
 			} else {
 				System.out.println(loop.get(i) + "'s target is " + loop.get(i + 1));
 			}
-
 		}
 	}
-
 }
