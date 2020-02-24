@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.ArrayList;
 
-
 public class Main {
 
     public static int people = 0;
@@ -13,7 +12,6 @@ public class Main {
     public static ArrayList names = new ArrayList();
 
     public static void main(String[] args) {
-
         startMenu();
 
         printPlayerList();
@@ -27,6 +25,8 @@ public class Main {
 		}
     }
 
+    
+    // Sets up how many people are playing, the names of people are playing, and randomizes their order
     public static void startMenu() {
         scan = new Scanner(System.in);
         System.out.print("How many people are playing?: ");
@@ -40,12 +40,12 @@ public class Main {
 
         while (names.size() > 0) {
             int random = (int) (Math.random() * (names.size()));
-            System.out.println("random" + random);
             playerList.add((String) names.get(random));
             names.remove(random);
         }
     }
 
+    // Prints out every player's target
     public static void printPlayerList() {
         System.out.println(playerList);
         for (int i = 0; i < playerList.size(); i++) {
@@ -57,6 +57,7 @@ public class Main {
         }
     }
 
+    // Remove a player that has been killed
     public static void remove(String name) {
 
     	String answer = "";
@@ -83,6 +84,4 @@ public class Main {
             remove(name);
         }
     }
-
-
 }
