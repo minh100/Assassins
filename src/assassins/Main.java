@@ -27,7 +27,7 @@ public class Main {
 		}
     }
 
-    public static void startMenu() {
+    public static void newGame() {
         scan = new Scanner(System.in);
         System.out.print("How many people are playing?: ");
         people = scan.nextInt();
@@ -40,10 +40,32 @@ public class Main {
 
         while (names.size() > 0) {
             int random = (int) (Math.random() * (names.size()));
-            System.out.println("random" + random);
             playerList.add((String) names.get(random));
             names.remove(random);
         }
+    }
+
+    public static void startMenu(){
+        System.out.println("New Game? 1");
+        System.out.println("Load Game? 2");
+        scan = new Scanner(System.in);
+        if(scan.nextLine().equalsIgnoreCase("1")){
+            System.out.println("Are you sure you want to start a new game? y/n");
+            if(scan.nextLine().equalsIgnoreCase("y")) newGame();
+            else { startMenu();}
+        }
+        else if (scan.nextLine().equalsIgnoreCase("2")){
+            loadGame();
+        }
+        else {
+            System.out.println("Enter a valid option");
+            startMenu();
+        }
+
+    }
+
+    public static void loadGame(){
+
     }
 
     public static void printPlayerList() {
