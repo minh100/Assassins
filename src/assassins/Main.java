@@ -23,8 +23,8 @@ public class Main {
         remove(name);
 
         if ( playerList.size() == 1){
-        	System.out.println(playerList.get(0) + " is the winner!");
-		}
+            System.out.println(playerList.get(0) + " is the winner!");
+        }
     }
 
     public static void newGame() {
@@ -81,24 +81,24 @@ public class Main {
 
     public static void remove(String name) {
 
-    	String answer = "";
+        String answer = "";
         while (!playerList.contains(name)) {
             System.out.println("Player not found. Input a current player.");
             name = scan.nextLine();
         }
         int index = playerList.indexOf(name);
         playerList.remove(index);
-		if ( playerList.size() == 1){
-			return;
-		}
+        if ( playerList.size() == 1){
+            return;
+        }
         printPlayerList();
 
         System.out.println("Did someone else die?: Y/N");
         answer = scan.nextLine();
         while (!answer.equalsIgnoreCase("Y") && !answer.equalsIgnoreCase("N")) {
-        	System.out.println ("Please provide a valid input");
-        	answer = scan.nextLine();
-		}
+            System.out.println ("Please provide a valid input");
+            answer = scan.nextLine();
+        }
         if (answer.equalsIgnoreCase("Y")) {
             System.out.println("Who has died?");
             name = scan.nextLine();
